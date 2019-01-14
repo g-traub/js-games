@@ -1,0 +1,78 @@
+.hanoi{
+  height : 300px;
+  max-width:700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ul{
+  height: 150px;
+  width: 120px;
+  border-bottom: 10px solid rgba(45, 48, 71, 0.349);
+  border-radius: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+ul::after{
+  content:"";
+  position: absolute;
+  height: 150px;
+  width: 10px;
+  background-color: rgba(45, 48, 71, 0.582);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  z-index: -10;
+}
+li{
+  border-radius: 2px 2px;
+}
+.disk-1{
+  height: 15px;
+  width: 20px;
+  background-color: #C5D86D;
+}
+.disk-2{
+  height: 16px;
+  width: 40px;
+  background-color: #FFBA5A;
+}
+.disk-3{
+  height: 17px;
+  width: 55px;
+  background-color: #FF7657;
+}
+.disk-4{
+  height: 18px;
+  width: 75px;
+  background-color: #CC444B; 
+}
+.disk-5{
+  height: 19px;
+  width: 95px;
+  background-color: #48BEFF;
+}
+.disk-6{
+  height: 20px;
+  width: 115px;
+  background-color: #665C84;
+}
+
+.invisible{
+  opacity: 0;
+}
+
+.unselectable{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,51 @@
+.connectfour .container{
+  background: #1E84D6;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+}
+.dot, .invisible-dot{
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 4px;
+}
+.mouseFollow{
+  position: absolute;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.connectfour:after {
+  content: '';
+  position: absolute;
+  width:400px;
+  height: 10px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background: #1E84D6;
+}
+.yellow{
+  background: #FED766;
+}
+.red{
+  background: #E15554;
+}
+.victory{
+  box-shadow: 0 0 0 5px inset #AFFC41;
+}
+.invisible-row{
+  display :flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.restart{
+  display: block;
+  margin: 30px auto;
+}

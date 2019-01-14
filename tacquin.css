@@ -1,0 +1,49 @@
+.sliding{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+ul{
+  width:300px;
+  height:300px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+li{
+  width: 99px;
+  height:99px;
+  background-size: 100%;
+  box-shadow: 0px 0px 5px 0px #656565;
+}
+
+
+.square1{
+  background-image: url("ressources/img/case-1.png");
+}
+.square2{
+  background-image: url("ressources/img/case-2.png");
+}
+.square3{
+  background-image: url("ressources/img/case-4.png");
+}
+.square4{
+  background-image: url("ressources/img/case-5.png");
+}
+.square5{
+  background-image: url("ressources/img/case-6.png");
+}
+.square6{
+  background-image: url("ressources/img/case-7.png");
+}
+.square7{
+  background-image: url("ressources/img/case-8.png");
+}
+.square8{
+  background-image: url("ressources/img/case-9.png");
+}

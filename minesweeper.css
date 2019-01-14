@@ -1,0 +1,46 @@
+.minesweeper{
+  text-align: center;
+}
+.minesweeper table{
+  margin: 50px auto 25px auto;
+  table-layout: fixed;
+  border: 5px solid #c0c1c2;
+  border-radius: 5px 5px;
+  border-collapse: separate;
+  border-spacing: 2px;
+  box-shadow: 0 0 2px 0;
+}
+
+td{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #e0e1e2;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.minesweeper table td:hover{
+  background-color: #c0c1c2;
+}
+
+.empty{
+  background-color: #c0c1c2;
+}
+
+td.mine-clicked{
+  background: #c0c1c2 url('ressources/img/explosion.png') no-repeat;
+  background-size: cover;
+}
+
+td.mine {
+  background: #e0e1e2 url('ressources/img/bomb.png') no-repeat;
+  background-size: cover;
+}
+
+td.flag {
+  background-image: url('ressources/img/flag.png');
+  background-size: cover;
+}
