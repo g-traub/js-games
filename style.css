@@ -1,0 +1,51 @@
+*{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+}
+
+.minesweeper a:hover{
+  color:yellow;
+}
+.hanoi a:hover{
+  color: green;
+}
+.slide a:hover{
+ color: cyan;
+}
+.connect-4 a:hover{
+  color: red
+}
+.game{
+  padding: 1rem;
+}
+.game a{
+  color: #fff;
+}
+.games{
+  background: #000;
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
