@@ -1,13 +1,14 @@
 *{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', Helvetica;
   text-align: center;
+  line-height: 1.5;
 }
 
 body{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
 }
 
@@ -19,16 +20,16 @@ a:hover{
   color: blue;
 }
 
-.minesweeper a:hover{
+.minesweeperButton a:hover{
   color:yellow;
 }
-.hanoi a:hover{
+.hanoiButton a:hover{
   color: green;
 }
-.slide a:hover{
+.slideButton a:hover{
  color: cyan;
 }
-.connect-4 a:hover{
+.connect-4Button a:hover{
   color: red
 }
 .game{
@@ -40,12 +41,77 @@ a:hover{
 .games{
   background: #000;
   background-blend-mode: multiply;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.games a{
+  display: block;
+  padding:13% 0;
+}
+
+.games h2{
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  padding:.5rem;
+  margin: .5rem;
+  border-radius: .1rem .1rem;
+}
+
+header, footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.index p {
+  margin: 0;
+}
+.header_index, .footer_index{
+  height:100%;
+}
+
+.header__game, .footer__game{
+  font-family: 'Press Start 2P', Helvetica;
+  background: #000;
+  color: #fff;
+  height: 5rem;
+  line-height: 1.5;
+}
+.header__game{
+  position: relative;
+}
+.header__game .return{
+  position: absolute;
+  left: 1rem;
+}
+.header__game svg{
+  fill: #fff;
+}
+.header__game svg:hover{
+  fill: yellow;
+}
+.footer__game a {
+  color: #fff;
+}
+
+.footer__game a:hover{
+  color: yellow;
+}
+.footer__game{
+  font-size: .8rem;
+}
+main{
+  margin: 5% 1rem;
+}
+
+.return{
+  width: 32px;
+  height: 32px;
 }

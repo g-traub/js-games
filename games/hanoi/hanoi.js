@@ -8,7 +8,7 @@ let allDisks;
 //initialise les variables
 const initVariables = () => {
   towers = document.querySelectorAll('.hanoi ul');
-  temp = undefined;
+  temp = null;
   towerTarget = document.querySelector('.tower-target');
   disk1 = document.querySelector('.disk-1');
   allDisks = document.querySelectorAll('li');
@@ -23,7 +23,7 @@ const checkWin =  () => {
 
 //Vérifie et modifie l'attribut draggable et classe css selectable
 const draggableVerifier = () => {
-  for (const tower of towers){
+  for (let tower of towers){
     const disks = tower.querySelectorAll('li');
     if (disks){
       for (let i = 0 ; i < disks.length ; i++){
@@ -46,16 +46,15 @@ const listenerHandler = () => {
   //ajoute les écouteurs sur les disques (pour le drag and drop)
   let element;
   let elementClass;
-  for (const disk of allDisks) {
+  for (let disk of allDisks) {
     disk.addEventListener('dragstart', function(e) {
       if (temp){
-        /* temp.classList.remove('selected'); */
         temp = undefined;
       }
       if (disk.draggable){
+        e.dataTransfer.setData('text/plain', " ");
         element = disk;
         elementClass =  disk.className;
-        setTimeout(() => disk.className = 'invisible', 0);
       }
     });
     disk.addEventListener('dragend', function() {
@@ -135,4 +134,3 @@ document.querySelector('button').addEventListener('click', function (){
   listenerHandler();
   draggableVerifier();
 })
-//FIN

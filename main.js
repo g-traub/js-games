@@ -7,7 +7,7 @@ const slider = document.querySelector('.slide');
 const games = document.querySelectorAll('.game a');
 
 const hoverin = e => {
-  gamesNode.style.background = `rgba(0,0,0,0.9) url('ressources/img/${e.target.innerHTML.split(' ')[0]}.png') `;
+  gamesNode.style.background = `rgba(0,0,0,0.9) url('ressources/img/${e.target.innerHTML.split(' ')[0]}.png') center`;
 }
 const hoverout = e => {
   gamesNode.style.background = `rgb(0,0,0)`;
