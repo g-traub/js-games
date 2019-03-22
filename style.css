@@ -5,7 +5,7 @@
 }
 
 body{
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +49,7 @@ a:hover{
 
 .games a{
   display: block;
-  padding:13% 0;
+  padding:5vh 0;
 }
 
 .games h2{
@@ -70,9 +70,16 @@ header, footer{
   flex-grow: 1;
 }
 
+header{
+  min-height: 50px;
+}
+footer{
+  min-height: 70px;
+}
 .index p {
   margin: 0;
 }
+
 .header_index, .footer_index{
   height:100%;
 }
@@ -107,7 +114,7 @@ header, footer{
 .footer__game{
   font-size: .8rem;
 }
-main{
+main:not(.minesweeper,.connect-4){
   margin: 5% 1rem;
 }
 

@@ -1,5 +1,6 @@
 .connectfour .container{
   background: #1E84D6;
+  position: relative;
   margin: 0 auto;
   cursor: pointer;
   display: flex;
@@ -12,6 +13,7 @@
   height: 40px;
   border-radius: 40px;
   margin: 4px;
+  z-index:1;
 }
 .mouseFollow{
   position: absolute;

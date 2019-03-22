@@ -1,8 +1,12 @@
 .minesweeper{
   text-align: center;
 }
+.result{
+  margin-top: 1.2rem;
+  visibility: hidden;
+}
 .minesweeper table{
-  margin: 50px auto 25px auto;
+  margin: 2% auto;
   table-layout: fixed;
   border: 5px solid #c0c1c2;
   border-radius: 5px 5px;

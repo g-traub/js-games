@@ -21,7 +21,8 @@ function checkWin(){
   let empty = document.querySelectorAll('.empty');
   if (empty.length === possibilitiesArray.length){
     showMines('win');
-    result.innerHTML = 'Gagné!';
+    result.innerHTML = 'You win!';
+    result.style.visibility = 'visible';
   }
 }
 function firstClick(e) {
@@ -73,6 +74,7 @@ function initGame(boxes, size=10, quantity=10) {
 
 document.querySelector(".minesweeper button").addEventListener("click", (e) => {
   e.preventDefault();
+  result.style.visibility = 'hidden';
   let quantity = parseInt(document.getElementById('quantity').value);
   let size = parseInt(document.getElementById('size').value);
   console.log(size);
@@ -178,5 +180,6 @@ function stopGame(boxes) {
   boxes.forEach(element => {
     element.removeEventListener("click", firstClick);
   });
-  result.innerHTML = 'Perdu! appuyer sur recommencer'
+  result.innerHTML = 'You lose... try again!';
+  result.style.visibility = 'visible';
 }
